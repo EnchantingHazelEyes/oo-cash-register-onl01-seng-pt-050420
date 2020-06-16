@@ -13,7 +13,7 @@ class CashRegister
   def add_item(title, price, quantity = 1)
      self.total += price * quantity
       quantity.times do
-      item_list << title
+        item_list << title
       end
   end 
   
@@ -28,10 +28,11 @@ class CashRegister
   end 
     
   def items
-   new_list = []
-   item_list.each do |item|
-   new_list << item  
-  end 
+    item_list
+   #new_list = []
+   #item_list.each do |item|
+   #new_list << item  
+  #end 
  end 
  
  def void_last_transaction
