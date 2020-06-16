@@ -10,10 +10,6 @@ class CashRegister
   end 
   
   def add_item(title, price, quantity = 1)
-      while i=1 < quantity
-        @items << title
-        i+=1
-      end
      self.total += price * quantity
   end 
     
