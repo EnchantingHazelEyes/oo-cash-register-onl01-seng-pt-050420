@@ -7,7 +7,6 @@ class CashRegister
     @discount = discount
     @title = title
     @item_list = []
-    @last_transaction_amount = last_transaction_amount
   end 
   
   def add_item(title, price, quantity = 1)
@@ -15,7 +14,7 @@ class CashRegister
       quantity.times do
         item_list << title
       end
-    last_transaction_amount = price * quantity
+    @last_transaction_amount = price * quantity
   end 
   
   def apply_discount
@@ -34,7 +33,7 @@ class CashRegister
  
  def void_last_transaction
     item_list.delete_at(-1)
-    self.total -= last_transaction_amount
+    self.total -= @last_transaction_amount
   end
 
 end 
