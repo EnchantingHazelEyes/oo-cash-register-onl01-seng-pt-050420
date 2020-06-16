@@ -13,7 +13,7 @@ class CashRegister
      self.total += price * quantity
   end 
   
-  def apply_discount
+  def apply_discount()
     if discount == 0 
       "There is no discount to apply."  
     else
