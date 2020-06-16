@@ -18,6 +18,7 @@ class CashRegister
     if discount < 0 
       puts "After the discount, the total comes to #{discounted_total} "
     else 
+    end 
       
   end 
     
