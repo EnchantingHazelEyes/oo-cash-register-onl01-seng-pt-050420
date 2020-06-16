@@ -12,7 +12,6 @@ class CashRegister
   
   def add_item(title, price, quantity = 1)
      self.total += price * quantity
-     last_transaction_amount = total
   end 
   
   def apply_discount
@@ -33,7 +32,7 @@ class CashRegister
  end 
  
  def void_last_transaction
-    total = total - 
+    total -= price
   end
 
 end 
