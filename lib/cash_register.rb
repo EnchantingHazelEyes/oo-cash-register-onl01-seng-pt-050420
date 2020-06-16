@@ -21,7 +21,7 @@ class CashRegister
    #new_list = []
    item_list.each do |item|
   # new_list << item  
-  #end 
+  end 
  end 
 
 end 
