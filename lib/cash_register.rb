@@ -19,7 +19,7 @@ class CashRegister
     
   def items
    #new_list = []
-   item_list << self.add_item   #.each do |item|
+   item_list.each do |item|
   # new_list << item  
   #end 
  end 
