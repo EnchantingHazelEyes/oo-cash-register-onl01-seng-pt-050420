@@ -29,10 +29,6 @@ class CashRegister
     
   def items
     item_list
-   #new_list = []
-   #item_list.each do |item|
-   #new_list << item  
-  #end 
  end 
  
  def void_last_transaction
