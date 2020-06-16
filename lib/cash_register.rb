@@ -14,8 +14,11 @@ class CashRegister
   end 
   
   def apply_discount
-    discounted_total = total % discount
-    puts "After the discount, the total comes to #{discounted_total} "
+    discounted_total = total / discount
+    if discount < 0 
+      puts "After the discount, the total comes to #{discounted_total} "
+    else 
+      
   end 
     
   def items
