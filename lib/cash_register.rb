@@ -20,7 +20,6 @@ class CashRegister
     else
     "After the discount, the total comes to $#{discounted_total}."
     end 
-    discounted_total
   end 
     
   def items
